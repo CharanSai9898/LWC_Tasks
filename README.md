@@ -27,7 +27,7 @@ Build a Lightning Web Component that allows users to enter a password, toggle it
 * Password is hidden (`type="password"`)
 * Eye icon is visible
 
-<img src="images/task1-initial.png" width="700"/>
+<img src="Screenshot 2026-03-11 102602.png" width="700"/>
 
 ---
 
