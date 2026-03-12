@@ -9,76 +9,42 @@
                     <form onsubmit={handleSubmit}>
 
                         <!-- Full Name -->
-                        <lightning-input
-                            label="Full Name"
-                            name="fullName"
-                            type="text"
-                            required
-                            minlength="3"
-                            pattern="[A-Za-z ]+"
+                        <lightning-input label="Full Name" name="fullName" type="text"  required minlength="3" pattern="[A-Za-z ]+"
                             message-when-pattern-mismatch="Name must contain only alphabets"
                             message-when-too-short="Name must be at least 3 characters"
                             message-when-value-missing="Name must be at least 3 characters">
                         </lightning-input>
 
                         <!-- Email -->
-                        <lightning-input
-                            label="Email"
-                            name="email"
-                            type="email"
-                            required
+                        <lightning-input  label="Email" name="email" type="email" required
                             message-when-type-mismatch="Enter a valid email"
                             message-when-value-missing="Enter a valid email">
                         </lightning-input>
 
                         <!-- Phone -->
-                        <lightning-input
-                            label="Phone Number"
-                            name="phone"
-                            type="tel"
-                            required
-                            pattern="[1-9]{1}[0-9]{9}"
+                        <lightning-input label="Phone Number" name="phone" type="tel" required pattern="[1-9]{1}[0-9]{9}"
                             message-when-pattern-mismatch="Enter a 10-digit phone number"
                             message-when-value-missing="Enter a 10-digit phone number">
                         </lightning-input>
 
                         <!-- Years of Experience -->
-                        <lightning-input
-                            label="Years of Experience"
-                            name="experience"
-                            type="number"
-                            required
-                            min="0"
-                            max="50"
+                        <lightning-input label="Years of Experience" name="experience" type="number" required min="0" max="50"
                             message-when-range-overflow="Must be 50 or less"
                             message-when-value-missing="Enter years of experience">
                         </lightning-input>
 
                         <!-- LinkedIn -->
-                        <lightning-input
-                            label="LinkedIn Profile URL"
-                            name="linkedin"
-                            type="url"
-                            pattern="https?://.*"
+                        <lightning-input label="LinkedIn Profile URL" name="linkedin" type="url" pattern="https?://.*"
                             message-when-pattern-mismatch="Enter a valid URL starting with http or https">
                         </lightning-input>
 
                         <!-- Cover Letter -->
-                        <lightning-textarea
-                            label="Cover Letter"
-                            name="coverLetter"
-                            required
-                            minlength="100"
-                            maxlength="500"
+                        <lightning-textarea label="Cover Letter" name="coverLetter" required minlength="100" maxlength="500"
                             message-when-value-missing="Cover letter must be at least 100 characters">
                         </lightning-textarea>
 
                         <div class="slds-align_absolute-center slds-m-top_medium">
-                            <lightning-button
-                                type="submit"
-                                variant="brand"
-                                label="Submit Application">
-                            </lightning-button>
+                            <lightning-button type="submit" variant="brand"label="Submit Application"></lightning-button>
                         </div>
 
                     </form>
