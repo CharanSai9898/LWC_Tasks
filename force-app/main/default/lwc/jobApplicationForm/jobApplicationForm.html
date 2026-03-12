@@ -16,6 +16,8 @@
                             type="text"
                             required
                             minlength="3"
+                            pattern="[A-Za-z ]+"
+                            message-when-pattern-mismatch="Name must contain only alphabets"
                             message-when-too-short="Name must be at least 3 characters"
                             message-when-value-missing="Name must be at least 3 characters">
                         </lightning-input>
@@ -69,7 +71,6 @@
                             required
                             minlength="100"
                             maxlength="500"
-                            message-when-too-short="Cover letter must be at least 100 characters"
                             message-when-value-missing="Cover letter must be at least 100 characters">
                         </lightning-textarea>
 
