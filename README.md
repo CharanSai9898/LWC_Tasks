@@ -27,7 +27,7 @@ Build a Lightning Web Component that allows users to enter a password, toggle it
 * Password is hidden (`type="password"`)
 * Eye icon is visible
 
-<img src="Screenshot 2026-03-11 102602.png" width="700"/>
+<img src="task1-1.png" width="700"/>
 
 ---
 
@@ -36,7 +36,7 @@ Build a Lightning Web Component that allows users to enter a password, toggle it
 * User types password
 * Password remains hidden
 
-<img src="images/task1-password-entered.png" width="700"/>
+<img src="task1-2.png" width="700"/>
 
 ---
 
@@ -45,7 +45,7 @@ Build a Lightning Web Component that allows users to enter a password, toggle it
 * Password becomes visible
 * Input type changes from `password` → `text`
 
-<img src="images/task1-show-password.png" width="700"/>
+<img src="task1-3.png" width="700"/>
 
 ---
 
@@ -58,7 +58,7 @@ Build a Lightning Web Component that allows users to enter a password, toggle it
 Copied!
 ```
 
-<img src="images/task1-copied-message.png" width="700"/>
+<img src="task1-5.png" width="700"/>
 
 ---
 
@@ -182,25 +182,25 @@ slds-m-bottom_small
 
 ### Validation Errors
 
-<img src="images/form-validation-errors.png" width="900"/>
+<img src="task2-2.png" width="900"/>
 
 ---
 
 ### Phone Number Custom Validation
 
-<img src="images/phone-validation.png" width="900"/>
+<img src="task2-3.png" width="900"/>
 
 ---
 
 ### Filled Form State
 
-<img src="images/form-filled.png" width="900"/>
+<img src="task2-1.png" width="900"/>
 
 ---
 
 ### Successful Submission
 
-<img src="images/form-submit.png" width="900"/>
+<img src="task2-4.png" width="900"/>
 
 ---
 
