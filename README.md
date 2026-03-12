@@ -229,4 +229,6 @@ After completing these assignments you will understand:
 
 # Author
 
-Salesforce LWC Practice Assignments
+**Koppisetti Charan Sai**
+© 2026 koppisetti Charan Sai. All rights reserved.
+
