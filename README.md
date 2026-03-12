@@ -8,55 +8,68 @@ This repository contains two Lightning Web Component (LWC) assignments focused o
 
 ## Objective
 
-Build a Lightning Web Component that allows users to enter a password, toggle its visibility, and copy the password to the clipboard with a confirmation message.
+Build a Lightning Web Component that allows users to enter a password, toggle its visibility, and copy the password to the clipboard.
 
 ## Features
 
 * Password input field
-* Show/Hide password functionality
+* Show / Hide password functionality
 * Copy password to clipboard
 * Success message after copying
 
-## Functional Requirements
+---
 
-### 1. Initial State
+## Functional Flow
 
-* The password field is empty.
-* Password is hidden (input type = `password`).
-* Eye icon is visible to toggle visibility.
+### 1️⃣ Initial State
 
-### 2. When User Enters Password
+* Password field is empty
+* Password is hidden (`type="password"`)
+* Eye icon is visible
 
-* User types a password in the input field.
-* The password remains hidden by default.
+<img src="images/task1-initial.png" width="700"/>
 
-### 3. Show / Hide Password
+---
 
-* Clicking the **Eye icon** toggles the password visibility.
-* Password switches between:
+### 2️⃣ When User Enters Password
 
-  * `password` (hidden)
-  * `text` (visible)
+* User types password
+* Password remains hidden
 
-### 4. Copy Password
+<img src="images/task1-password-entered.png" width="700"/>
 
-* Clicking the **Copy icon** copies the password to the clipboard.
-* A success message appears on screen:
+---
+
+### 3️⃣ When Eye Icon is Clicked
+
+* Password becomes visible
+* Input type changes from `password` → `text`
+
+<img src="images/task1-show-password.png" width="700"/>
+
+---
+
+### 4️⃣ Copy Password
+
+* Clicking the copy icon copies password to clipboard
+* Green success message appears
 
 ```
 Copied!
 ```
 
-* The success message should appear in **green**.
+<img src="images/task1-copied-message.png" width="700"/>
+
+---
 
 ## UI Behavior Summary
 
-| Action              | Result                                         |
-| ------------------- | ---------------------------------------------- |
-| User types password | Password stays hidden                          |
-| Click Eye Icon      | Password becomes visible                       |
-| Click Eye again     | Password becomes hidden                        |
-| Click Copy Icon     | Password copied to clipboard + success message |
+| Action              | Result                            |
+| ------------------- | --------------------------------- |
+| User types password | Password stays hidden             |
+| Click Eye Icon      | Password becomes visible          |
+| Click Eye again     | Password becomes hidden           |
+| Click Copy Icon     | Password copied + success message |
 
 ---
 
@@ -64,33 +77,35 @@ Copied!
 
 ## Objective
 
-Create a **Job Application Form using LWC** with strong client-side validation rules and a clean user interface.
+Create a **Job Application Form using Lightning Web Components** with strong **client-side validations**.
 
-## Component Name
+---
+
+# Component Details
+
+Component Name
 
 ```
 jobApplicationForm
 ```
 
-## Availability
-
-Make the component available on:
+Available On
 
 * App Pages
 * Record Pages
 
 ---
 
-# Form Fields and Validation Rules
+# Form Fields and Validations
 
-| Field                | Requirement                                      |
-| -------------------- | ------------------------------------------------ |
-| Full Name            | Required, minimum 3 characters                   |
-| Email                | Required, must be valid email                    |
-| Phone Number         | Required, exactly 10 digits, cannot start with 0 |
-| Years of Experience  | Required, number between 0 and 50                |
-| LinkedIn Profile URL | Optional, must start with http or https          |
-| Cover Letter         | Required, 100–500 characters                     |
+| Field                | Requirement                                         |
+| -------------------- | --------------------------------------------------- |
+| Full Name            | Required, minimum 3 characters                      |
+| Email                | Required, valid email format                        |
+| Phone Number         | Required, exactly 10 digits, cannot start with zero |
+| Years of Experience  | Required, number between 0 and 50                   |
+| LinkedIn Profile URL | Optional, must start with http or https             |
+| Cover Letter         | Required, between 100 and 500 characters            |
 
 ---
 
@@ -98,7 +113,7 @@ Make the component available on:
 
 ### Standard Validation
 
-Use Lightning input types:
+Using Lightning input types
 
 ```
 lightning-input type="email"
@@ -107,40 +122,38 @@ lightning-input type="number"
 lightning-input type="url"
 ```
 
-### Custom Validation
+---
 
-Custom validation must be implemented for **Phone Number**.
+### Custom Validation (Phone Number)
 
-Rules:
+Rules
 
-* Must be exactly **10 digits**
-* Must **not start with zero**
+* Must be **10 digits**
+* Cannot start with **0**
 
-Use:
+Using
 
 ```
 setCustomValidity()
 reportValidity()
 ```
 
-These methods display validation errors **inline below the field**.
+These display validation messages inline.
 
 ---
 
 # Submit Button Behavior
 
-When the **Submit button** is clicked:
+When **Submit Application** is clicked:
 
-1. Validate all input fields
-2. If validation fails:
+1. Validate all inputs
+2. If validation fails → show inline errors
+3. If validation succeeds
 
-   * Show validation errors inline
-3. If validation passes:
+   * Show success toast
+   * Clear the form
 
-   * Show **Toast Message**
-   * Clear the form fields
-
-Example success message:
+Example message
 
 ```
 Application submitted successfully!
@@ -148,18 +161,15 @@ Application submitted successfully!
 
 ---
 
-# UI Design Requirements
+# UI Design
 
-* Wrap the entire form inside:
+* Form wrapped inside
 
 ```
 <lightning-card>
 ```
 
-* Use **SLDS classes** for spacing and layout
-* Ensure the form looks clean and structured
-
-Example:
+* SLDS classes used
 
 ```
 slds-p-around_medium
@@ -168,23 +178,29 @@ slds-m-bottom_small
 
 ---
 
-# Expected Screenshots
+# Screenshots
 
-## Assignment 1
+### Validation Errors
 
-1. Initial password field state
-2. Password entered state
-3. Password visible after clicking eye icon
-4. Password copied message displayed
+<img src="images/form-validation-errors.png" width="900"/>
 
 ---
 
-## Assignment 2
+### Phone Number Custom Validation
 
-1. Form showing validation errors
-2. Phone number custom validation error
-3. Form filled correctly
-4. Successful submission state
+<img src="images/phone-validation.png" width="900"/>
+
+---
+
+### Filled Form State
+
+<img src="images/form-filled.png" width="900"/>
+
+---
+
+### Successful Submission
+
+<img src="images/form-submit.png" width="900"/>
 
 ---
 
@@ -193,21 +209,21 @@ slds-m-bottom_small
 * Salesforce Lightning Web Components (LWC)
 * JavaScript
 * HTML
-* SLDS (Salesforce Lightning Design System)
+* Salesforce Lightning Design System (SLDS)
 
 ---
 
 # Learning Outcomes
 
-By completing these assignments you will understand:
+After completing these assignments you will understand:
 
 * LWC event handling
-* Dynamic UI updates
 * Clipboard API usage
-* Form validation techniques
-* Custom validation using `setCustomValidity`
-* User feedback using toast messages
-* Clean UI design with SLDS
+* Dynamic UI updates
+* Client-side form validation
+* Custom validation with `setCustomValidity`
+* Showing feedback using Toast messages
+* Clean UI design using SLDS
 
 ---
 
