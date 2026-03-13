@@ -409,7 +409,7 @@ dashboard1.png
 Example:
 
 ```
-![Large Screen Dashboard](images/dashboard-large-screen.png)
+![Large Screen Dashboard](dashboard1.png)
 ```
 
 ---
@@ -425,7 +425,7 @@ dashboard2.png
 Example:
 
 ```
-![Small Screen Dashboard](images/dashboard-small-screen.png)
+![Small Screen Dashboard](dashboard2.png)
 ```
 
 ---
