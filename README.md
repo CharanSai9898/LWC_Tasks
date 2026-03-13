@@ -400,35 +400,21 @@ The dashboard layout adapts to different screen sizes.
 
 ## Large Screen Layout
 
-Add screenshot here:
 
-```
-dashboard1.png
-```
 
-Example:
+<img src="dashboard1.png" width="700"/>
 
-```
-![Large Screen Dashboard](dashboard1.png)
-```
+
 
 ---
 
 ## Small Screen Layout
 
-Add screenshot here:
-
-```
-dashboard2.png
-```
 
 Example:
 
-```
-![Small Screen Dashboard](dashboard2.png)
-```
+<img src="dashboard2.png" width="700"/>
 
----
 
 # Technologies Used
 
