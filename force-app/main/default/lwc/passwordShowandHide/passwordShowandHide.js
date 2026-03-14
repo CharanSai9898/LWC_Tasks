@@ -17,6 +17,9 @@ export default class PasswordShowandHide extends LightningElement {
     }
 
     copyPassword() {
+         if (!this.password) {
+            return;
+        }
         navigator.clipboard.writeText(this.password);
 
         this.copied = true;

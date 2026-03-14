@@ -1,0 +1,10 @@
+.totalCasesBox{
+    background-color: var(--slds-g-color-palette-purple-60);
+    color: white;
+}
+
+.monthCasesBox{
+    background-color: var(--slds-g-color-palette-purple-40);
+    color: white;
+}
+
