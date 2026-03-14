@@ -226,6 +226,219 @@ After completing these assignments you will understand:
 * Clean UI design using SLDS
 
 ---
+# Assignment 3 – Case Dashboard using LWC and Apex
+
+This project implements a **Case Dashboard in Salesforce** using **Lightning Web Components (LWC)** and **Apex**.
+The dashboard provides a modern and visually appealing interface to display **Case statistics and insights**.
+
+It helps users quickly understand the status of cases in the system through **cards, statistics tiles, and tables**.
+
+---
+
+# Objective
+
+Build a **dynamic Case Dashboard** that retrieves case data from Salesforce using **Apex** and displays it in a **clean and responsive UI using Lightning Web Components**.
+
+---
+
+# Key Features
+
+* Display total number of cases
+* Show number of **Open and Closed Cases**
+* Show **Case Priority distribution**
+* Show **Cases opened in the current month**
+* Display **Cases grouped by Origin**
+* Modern **tile-based dashboard layout**
+* Responsive UI for different screen sizes
+
+---
+
+# Apex Controller
+
+The Apex controller retrieves Case-related statistics from Salesforce.
+
+### The controller should return:
+
+* Total number of Cases
+* Number of **Open Cases**
+* Number of **Closed Cases**
+* Count of Cases by **Priority**
+
+  * High
+  * Medium
+  * Low
+* Number of Cases **opened in the current month**
+* Count of Cases grouped by **Case Origin**
+
+These values are sent to the LWC using **@AuraEnabled methods**.
+
+---
+
+# Lightning Web Component (LWC)
+
+The LWC component fetches data from the Apex controller and displays it on the dashboard.
+
+### Key LWC Concepts Used
+
+* `@wire` to call Apex methods
+* Tracked properties to store returned data
+* Dynamic UI rendering using Lightning components
+
+Example usage:
+
+```
+@wire(getCaseDashboardData)
+casesData;
+```
+
+---
+
+# Dashboard Layout
+
+The dashboard is organized using a **3-column tile layout**.
+
+Each statistic appears in its own **card tile**.
+
+### Example Tiles
+
+* Total Cases
+* Open Cases
+* Closed Cases
+* High Priority Cases
+* Medium Priority Cases
+* Low Priority Cases
+* Cases Created This Month
+
+---
+
+# UI Design
+
+The dashboard uses **Lightning Design System (SLDS)** to maintain consistent styling.
+
+### Design Elements
+
+* Tile-based card layout
+* Clear spacing and alignment
+* Clean typography
+* Responsive layout
+
+Example structure:
+
+```
+lightning-card
+   ├─ Stat Tiles
+   ├─ Priority Statistics
+   └─ Cases by Origin Table
+```
+
+---
+
+# Tile Color Themes
+
+Different colors are applied to make the dashboard visually intuitive.
+
+| Tile            | Color Theme |
+| --------------- | ----------- |
+| Total Cases     | Purple      |
+| Open Cases      | Blue        |
+| Closed Cases    | Green       |
+| High Priority   | Red         |
+| Medium Priority | Orange      |
+| Low Priority    | Yellow      |
+
+---
+
+# Cases by Origin Table
+
+Cases grouped by **Origin** are displayed using **Lightning Datatable**.
+
+Example Origins:
+
+* Phone
+* Email
+* Web
+* Chat
+
+### Datatable Features
+
+* Displays Origin name
+* Displays Case count
+* Clean tabular layout
+
+Example structure:
+
+```
+Origin | Case Count
+-------------------
+Phone  | 25
+Email  | 18
+Web    | 12
+Chat   | 6
+```
+
+This table appears inside its own **dashboard tile**.
+
+---
+
+# Responsiveness
+
+The dashboard layout adapts to different screen sizes.
+
+### Large Screens
+
+* Tiles appear in **three columns**
+* Table displayed alongside tiles
+
+### Small Screens
+
+* Tiles automatically stack vertically
+* Table moves below the tiles
+
+---
+
+# Screenshots
+
+## Large Screen Layout
+
+
+
+<img src="dashboard1.png" width="700"/>
+
+
+
+---
+
+## Small Screen Layout
+
+
+Example:
+
+<img src="dashboard2.png" width="700"/>
+
+
+# Technologies Used
+
+* Salesforce Lightning Web Components (LWC)
+* Apex
+* Lightning Datatable
+* Salesforce Lightning Design System (SLDS)
+
+---
+
+# Learning Outcomes
+
+Through this assignment you will learn:
+
+* Integrating **Apex with LWC**
+* Using `@wire` to fetch server-side data
+* Creating **dashboard-style UI components**
+* Using **Lightning Datatable**
+* Building **responsive Salesforce UI layouts**
+* Applying **SLDS styling and layout utilities**
+
+---
+
+
 
 # Author
 
