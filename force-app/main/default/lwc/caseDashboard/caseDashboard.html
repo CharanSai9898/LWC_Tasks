@@ -4,7 +4,7 @@
 <div class="slds-grid slds-wrap slds-gutters">
 
 <!-- Total Cases -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium square-box">
 <div class="slds-box totalCasesBox slds-text-align_center slds-p-around_large">
 <p>Total Cases</p>
 <h1 class="slds-text-heading_large">{stats.totalCases}</h1>
@@ -12,7 +12,7 @@
 </div>
 
 <!-- Open Cases -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium square-box">
 <div class="slds-box slds-theme_success slds-text-align_center slds-p-around_large">
 <p>Open Cases</p>
 <h1 class="slds-text-heading_large">{stats.openCases}</h1>
@@ -20,7 +20,7 @@
 </div>
 
 <!-- Closed Cases -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium  square-box">
 <div class="slds-box slds-theme_error slds-text-align_center slds-p-around_large">
 <p>Closed Cases</p>
 <h1 class="slds-text-heading_large">{stats.closedCases}</h1>
@@ -28,7 +28,7 @@
 </div>
 
 <!-- High Priority -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium square-box">
 <div class="slds-box slds-theme_warning slds-text-align_center slds-p-around_large">
 <p>High Priority</p>
 <h1 class="slds-text-heading_large">{stats.highPriority}</h1>
@@ -36,15 +36,15 @@
 </div>
 
 <!-- Medium Priority -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
-<div class="slds-box slds-theme_shade slds-text-align_center slds-p-around_large">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium square-box">
+<div class="slds-box medium_priority slds-text-align_center slds-p-around_large">
 <p>Medium Priority</p>
 <h1 class="slds-text-heading_large">{stats.mediumPriority}</h1>
 </div>
 </div>
 
 <!-- Low Priority -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium square-box">
 <div class="slds-box slds-theme_alt-inverse slds-text-align_center slds-p-around_large">
 <p>Low Priority</p>
 <h1 class="slds-text-heading_large">{stats.lowPriority}</h1>
@@ -52,7 +52,7 @@
 </div>
 
 <!-- Cases This Month -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium square-box">
 <div class="slds-box monthCasesBox slds-text-align_center slds-p-around_large">
 <p>Cases This Month</p>
 <h1 class="slds-text-heading_large">{stats.casesThisMonth}</h1>
@@ -60,19 +60,11 @@
 </div>
 
 <!-- Cases By Origin Datatable -->
-<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium">
+<div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3 slds-m-top_medium ">
 
-<lightning-card title="Cases By Origin">
-
-<lightning-datatable
-key-field="Origin"
-data={data}
-columns={columns}
-hide-checkbox-column>
-</lightning-datatable>
-
+<lightning-card class="slds-m-top_medium"> Cases By Origin
+<lightning-datatable key-field="Origin" data={data} columns={columns} hide-checkbox-column></lightning-datatable>
 </lightning-card>
-
 </div>
 
 </div>

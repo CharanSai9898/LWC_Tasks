@@ -8,3 +8,25 @@
     color: white;
 }
 
+.medium_priority{
+    background-color: #F1F14E;
+    color: white;
+}
+
+.square-box{
+    display:flex;
+    justify-content:center;
+}
+
+.square-box .slds-box{
+    width:220px;
+    height:180px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;   
+    align-items:center;      
+    text-align:center;
+    
+}
+
+

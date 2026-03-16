@@ -8,7 +8,6 @@ public with sharing class CaseDashboardController {
         stats.put('totalCases',[SELECT COUNT() FROM Case]);
         stats.put('openCases',[SELECT COUNT() FROM Case WHERE Status!='Closed']);
         stats.put('closedCases',[SELECT COUNT() FROM Case WHERE Status='Closed']);
-
         stats.put('highPriority',[SELECT COUNT() FROM Case WHERE Priority='High']);
         stats.put('mediumPriority',[SELECT COUNT() FROM Case WHERE Priority='Medium']);
         stats.put('lowPriority',[SELECT COUNT() FROM Case WHERE Priority='Low']);
