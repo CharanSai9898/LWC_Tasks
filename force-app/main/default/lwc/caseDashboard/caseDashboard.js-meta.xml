@@ -9,7 +9,7 @@
         <target>lightning__HomePage</target>
     </targets>
 
-    <targetConfigs>
+  <targetConfigs>
         <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage">
             <supportedFormFactors>
                 <supportedFormFactor type="Small"/>

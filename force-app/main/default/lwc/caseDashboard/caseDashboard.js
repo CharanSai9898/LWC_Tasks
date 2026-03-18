@@ -9,6 +9,7 @@ export default class CaseDashboard extends LightningElement {
     columns = [
         { label: 'Origin', fieldName: 'Origin' },
         { label: 'Total Cases', fieldName: 'total' }
+        
     ];
 
     @wire(getCaseStats)
