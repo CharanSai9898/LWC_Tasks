@@ -535,6 +535,146 @@ Only one FAQ stays open at a time; others collapse automatically.
 * Icons aligned to the right for better UX
 * Smooth user interaction
 
+# Task _5 📊 Live Crypto Dashboard 
+
+## 🚀 Overview
+This project is a **Lightning Web Component (LWC)** that displays real-time cryptocurrency data in a **dashboard format**.
+
+It fetches live data from the **CoinGecko API** and visualizes it using **Chart.js**, providing an interactive and dynamic user experience.
+
+---
+
+## 🧩 Features
+
+- ✅ Displays Top 5 Cryptocurrencies by Market Cap  
+- ✅ Shows Coin Name, Symbol, Price, and 24h Change  
+- ✅ Line Chart → Bitcoin vs Ethereum (Last 7 Days)  
+- ✅ Bar Chart → Market Cap comparison of top 5 coins  
+- ✅ Dynamic color indicators:
+  - Green → Price increase  
+  - Red → Price decrease  
+- ✅ Refresh button to reload data  
+- ✅ Loading spinner and error handling  
+- ✅ Built using SLDS  
+- ✅ Responsive and clean UI  
+- ✅ Wrapped inside a Lightning Card  
+
+---
+
+## 🛠️ Component Details
+
+- **Component Name:** `cryptoDashboard`  
+
+### 📍 Exposed To:
+- App Page  
+- Record Page  
+- Home Page  
+
+---
+
+## 📂 Data Used
+
+- Data fetched from CoinGecko API  
+- Top 5 cryptocurrencies  
+- Bitcoin & Ethereum 7-day historical data  
+
+---
+
+## ⚙️ Functionality
+
+### 🔹 Dashboard Cards
+
+- Displays:
+  - Coin Name  
+  - Symbol  
+  - Current Price  
+  - 24h Price Change  
+
+- Color indication:
+  - 🟢 Positive → Green  
+  - 🔴 Negative → Red  
+
+---
+
+### 🔹 Line Chart (BTC vs ETH)
+
+- Compares Bitcoin and Ethereum prices  
+- Shows last 7 days trend  
+- Helps visualize market movement  
+
+---
+
+### 🔹 Bar Chart (Market Cap)
+
+- Displays top 5 cryptocurrencies  
+- Compares market capitalization  
+- Easy visual comparison  
+
+---
+
+### 🔹 Refresh Feature
+
+- Reloads latest crypto data  
+- Updates both charts and cards  
+
+---
+
+## 📡 API Endpoints
+
+### Top 5 Coins
+
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=5&page=1
+
+
+### Market Chart (7 Days)
+
+https://api.coingecko.com/api/v3/coins/{id}/market_chart?vs_currency=usd&days=7
+
+
+---
+
+## 📸 Screenshots
+<img src="cryptodashboard.png">
+
+### 1️⃣ Dashboard Overview  
+Displays top 5 cryptocurrencies with pricing details.
+
+---
+
+### 2️⃣ Line Chart  
+Bitcoin vs Ethereum price comparison over 7 days.
+
+---
+
+### 3️⃣ Bar Chart  
+Market cap comparison of top 5 cryptocurrencies.
+
+---
+
+## 🎨 UI & Styling
+
+- Uses SLDS grid system for layout  
+- Clean card-based design using `<lightning-card>`  
+- Responsive across devices  
+- Smooth animations and hover effects  
+
+
+## ⚠️ Error Handling
+
+- Handles API failures in Apex  
+- Displays error messages using toasts  
+- Uses try-catch blocks  
+
+---
+
+## 📌 Key Learnings
+
+- Apex callouts to external APIs  
+- Integrating Chart.js with LWC  
+- Handling async data  
+- Building real-time dashboards  
+
+--- 
 
 
 # Author
