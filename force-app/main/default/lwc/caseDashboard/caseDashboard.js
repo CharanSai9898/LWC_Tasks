@@ -44,7 +44,6 @@ export default class CaseDashboard extends NavigationMixin(LightningElement) {
         }
     };
 
-    // Generate URL and open in new tab
     this[NavigationMixin.GenerateUrl](pageRef).then(url => {
         window.open(url, '_blank');
     });
