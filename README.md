@@ -508,7 +508,7 @@ A switch is provided to control behavior:
 ### 1️⃣ Initial State
 
 All FAQs are collapsed by default.
-<img src="initialstate.png" width="700"/>
+<img src="initialstate.png" width="500"/>
 
 ### 2️⃣ Multiple FAQs Open
 
@@ -533,19 +533,6 @@ Only one FAQ stays open at a time; others collapse automatically.
 * Clean card-based design using `<lightning-card>`
 * Icons aligned to the right for better UX
 * Smooth user interaction
-
----
-
-## 📦 How to Use
-
-1. Deploy the component to your Salesforce org
-2. Go to **App Builder**
-3. Drag and drop `faqAccordion` onto:
-
-   * App Page / Record Page / Home Page
-4. Save and Activate
-
----
 
 
 
