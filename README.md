@@ -438,6 +438,115 @@ Through this assignment you will learn:
 
 ---
 
+# 📌 FAQ Accordion - LWC Component
+
+## 🚀 Overview
+
+This project is a **Lightning Web Component (LWC)** that displays Frequently Asked Questions in an **accordion format** with interactive toggle functionality.
+
+It allows users to expand/collapse answers and switch between **multiple-open mode** and **single-open mode**.
+
+---
+
+## 🧩 Features
+
+* ✅ Accordion-style FAQ layout
+* ✅ Expand/Collapse answers on click
+* ✅ Toggle icons (+ / –)
+* ✅ Switch between:
+
+  * Multiple FAQs open at once
+  * Only one FAQ open at a time
+* ✅ Built using **SLDS (Salesforce Lightning Design System)**
+* ✅ Responsive and clean UI
+* ✅ Wrapped inside a Lightning Card
+
+---
+
+## 🛠️ Component Details
+
+* **Component Name:** `faqAccordion`
+* **Exposed To:**
+
+  * App Page
+  * Record Page
+  * Home Page
+
+---
+
+## 📂 Data Used
+
+* Hardcoded FAQ data
+* Minimum **3 questions**
+* Each answer contains **~500 characters**
+
+---
+
+## ⚙️ Functionality
+
+### 🔹 Accordion Behavior
+
+* Click on a question → toggles the answer
+* Displays:
+
+  * ➕ when collapsed
+  * ➖ when expanded
+
+### 🔹 Toggle Mode Switch
+
+A switch is provided to control behavior:
+
+| Mode | Description                              |
+| ---- | ---------------------------------------- |
+| OFF  | Multiple FAQs can be open simultaneously |
+| ON   | Only one FAQ can be open at a time       |
+
+---
+
+## 📸 Screenshots
+
+### 1️⃣ Initial State
+
+All FAQs are collapsed by default.
+<img src="" width="700"/>
+
+### 2️⃣ Multiple FAQs Open
+
+Users can expand multiple questions at the same time.
+<img src="" width="700"/>
+
+### 3️⃣ Toggle Switch Enabled
+
+Switch turned ON → prepares for single-open mode.
+<img src="" width="700"/>
+
+### 4️⃣ Single FAQ Mode
+
+Only one FAQ stays open at a time; others collapse automatically.
+<img src="" width="700"/>
+
+---
+
+## 🎨 UI & Styling
+
+* Uses **SLDS classes** for layout and spacing
+* Clean card-based design using `<lightning-card>`
+* Icons aligned to the right for better UX
+* Smooth user interaction
+
+---
+
+## 📦 How to Use
+
+1. Deploy the component to your Salesforce org
+2. Go to **App Builder**
+3. Drag and drop `faqAccordion` onto:
+
+   * App Page / Record Page / Home Page
+4. Save and Activate
+
+---
+
 
 
 # Author
