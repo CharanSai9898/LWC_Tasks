@@ -438,7 +438,7 @@ Through this assignment you will learn:
 
 ---
 
-# Task - 4 FAQ Accordion - LWC Component
+# 📌 FAQ Accordion - LWC Component
 
 ## 🚀 Overview
 
@@ -508,8 +508,7 @@ A switch is provided to control behavior:
 ### 1️⃣ Initial State
 
 All FAQs are collapsed by default.
-
-<img src="initialstate.png" width="700"/>
+<img src="initialstate.png" width="500"/>
 
 ### 2️⃣ Multiple FAQs Open
 
