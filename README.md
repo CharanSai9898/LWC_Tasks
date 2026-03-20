@@ -508,22 +508,22 @@ A switch is provided to control behavior:
 ### 1️⃣ Initial State
 
 All FAQs are collapsed by default.
-<img src="initialstate.png" width="700"/>
+<img src="" width="700"/>
 
 ### 2️⃣ Multiple FAQs Open
 
 Users can expand multiple questions at the same time.
-<img src="multiplefaqopen.png" width="700"/>
+<img src="" width="700"/>
 
 ### 3️⃣ Toggle Switch Enabled
 
 Switch turned ON → prepares for single-open mode.
-<img src="toggleswitchenabled.png" width="700"/>
+<img src="" width="700"/>
 
 ### 4️⃣ Single FAQ Mode
 
 Only one FAQ stays open at a time; others collapse automatically.
-<img src="singlefaqmode.png" width="700"/>
+<img src="" width="700"/>
 
 ---
 
