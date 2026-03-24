@@ -3,6 +3,11 @@
     color: white;
 }
 
+.datatable-box{
+ border: solid #d8dde6;
+    border-radius: 8px;
+}
+
 .monthCasesBox{
     background-color: var(--slds-g-color-palette-purple-40);
     color: white;
@@ -35,13 +40,7 @@
     font-style: italic;
     
  }
-lightning-card:hover{
-    background-color: chartreuse;
-    color: coral;
-    font-weight: bolder;
-    text-decoration: wavy;
-    
-}
+
 
 .square-box .slds-box {
     transition: all 0.3s ease;
@@ -53,4 +52,4 @@ lightning-card:hover{
     color: white;
     transform: scale(1.05);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
+} 
