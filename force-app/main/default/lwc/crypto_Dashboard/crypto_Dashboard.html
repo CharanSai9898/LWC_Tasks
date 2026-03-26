@@ -1,0 +1,53 @@
+<template>
+    <lightning-card>
+
+         <div slot="title" class="custom-header">
+        <img src={iconUrl} class="icon"/>
+        <span>Crypto Dashboard</span>
+    </div>
+
+        <!-- Refresh -->
+        <div class="slds-m-around_small slds-text-align_right">
+            <lightning-button label="Refresh" onclick={handleRefresh}></lightning-button>
+        </div>
+
+        <!-- Loader -->
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+
+        <!-- Top Cards -->
+        <div class="slds-grid slds-wrap card-container">
+            <template for:each={coins} for:item="coin">
+                <div key={coin.name} class="slds-col slds-size_1-of-5 card-box">
+
+                    <p class="coin-name">{coin.name}</p>
+                    <p class="coin-symbol">({coin.symbol})</p>
+
+                    <h2 class="price">{coin.formattedPrice}</h2>
+
+                    <p class={coin.changeClass}>
+                        {coin.change}%
+                    </p>
+                    
+                </div>
+            </template>
+        </div>
+
+        <!-- Charts 
+        <div class="slds-grid slds-wrap slds-m-top_large">
+
+            <div class="slds-col slds-size_1-of-2 chart-box">
+                <h3>Bitcoin vs Ethereum - Last 7 Days</h3>
+                <canvas class="lineChart"></canvas>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2 chart-box">
+                <h3>Market Cap - Top 5 Coins</h3>
+                <canvas class="barChart"></canvas>
+            </div>
+
+        </div>-->
+
+    </lightning-card>
+</template>
