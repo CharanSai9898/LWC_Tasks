@@ -41,15 +41,14 @@
     
  }
 
-
-.square-box .slds-box {
-    transition: all 0.3s ease;
-    cursor: pointer;
+ .square-box .slds-box {
+    transition: all 0.5s ease-in-out;
+    border-radius: 12px; 
 }
 
 .square-box .slds-box:hover {
-    background-color: red !important;
+    background: red;
     color: white;
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-} 
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); 
+}
