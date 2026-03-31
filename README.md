@@ -634,7 +634,7 @@ https://api.coingecko.com/api/v3/coins/{id}/market_chart?vs_currency=usd&days=7
 ---
 
 ## 📸 Screenshots
-<img src="cryptodashboard.png">
+<img src="cryptoDashboard.png">
 
 ### 1️⃣ Dashboard Overview  
 Displays top 5 cryptocurrencies with pricing details.
