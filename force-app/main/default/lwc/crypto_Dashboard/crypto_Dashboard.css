@@ -1,0 +1,73 @@
+.custom-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+}
+
+/* 
+.card-container {
+    gap: 10px;
+    padding: 8px;
+} */
+
+.card-box {
+    background: #f4f6f9;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-Left: 10px;
+    margin-right: 10PX;
+margin-top: 8px;
+    transition: all 0.3s ease;
+} 
+
+.card-box:hover {
+    transform: translateY(-5px);
+   /* box-shadow: 0 10px 20px rgba(0,0,0,0.15);*/
+box-shadow: 0 10px 20px rgba(128, 0, 255, 0.25);
+}
+
+.coin-name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.coin-symbol {
+    color: gray;
+    font-size: 12px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.chart-box {
+    padding: 15px;
+}
+
+.chart-box canvas {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
