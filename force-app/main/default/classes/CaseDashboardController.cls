@@ -11,9 +11,7 @@ public with sharing class CaseDashboardController {
         stats.put('highPriority',[SELECT COUNT() FROM Case WHERE Priority='High']);
         stats.put('mediumPriority',[SELECT COUNT() FROM Case WHERE Priority='Medium']);
         stats.put('lowPriority',[SELECT COUNT() FROM Case WHERE Priority='Low']);
-
-        stats.put('casesThisMonth',
-        [SELECT COUNT() FROM Case WHERE CreatedDate = THIS_MONTH]);
+        stats.put('casesThisMonth',[SELECT COUNT() FROM Case WHERE CreatedDate = THIS_MONTH]);
 
         return stats;
     }

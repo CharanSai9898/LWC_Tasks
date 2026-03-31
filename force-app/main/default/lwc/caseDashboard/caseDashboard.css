@@ -43,7 +43,7 @@
 
  .square-box .slds-box {
     transition: all 0.5s ease-in-out;
-    border-radius: 12px; 
+    border-radius: 20px ;
 }
 
 .square-box .slds-box:hover {

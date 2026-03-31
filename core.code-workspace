@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "c:/Users/CHARAN/Desktop/Nyros Training/Sample apps practise/lwc challenges/lwcChallenges"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "c:/Users/CHARAN/Desktop/Nyros Training/Sample apps practise/lwc challenges/lwcChallenges"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "c:\\Users\\CHARAN\\Desktop\\Nyros Training\\Sample apps practise\\lwc challenges\\lwcChallenges\\.eslintrc.json"
+    }
+  }
+}

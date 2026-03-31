@@ -44,7 +44,7 @@ export default class CryptoDashboard extends LightningElement {
                     changeClass: c.change && c.change > 0 ? 'green' : 'red'
                 }));
 
-                // ⏳ wait for DOM
+                // ⏳ wait for Dom
                 setTimeout(() => {
                     this.renderCharts(data);
                 }, 0);

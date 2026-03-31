@@ -28,19 +28,14 @@ export default class FaqAccordion extends LightningElement {
         }
     ];
     
-//     stopPropagation(event) {
-//     event.stopPropagation();
-// }
 
     handleToggle(event) {
         this.isSingleOpen = event.target.checked;
-
-        // Close all FAQs when switching mode
         this.faqs = this.faqs.map(faq => ({ ...faq, open: false,iconName: 'utility:add'}));
     }
 
     handleClick(event) {
-        const clickedId = parseInt(event.currentTarget.dataset.id, 10);
+        const clickedId = parseInt(event.currentTarget.dataset.id);
 
         this.faqs = this.faqs.map(faq => {
 

@@ -3,28 +3,26 @@
         
         
         <div class="slds-text-align_center  custom-margin ">
-            <lightning-input type ="toggle" label ="Allow only one FAQ open at a time" checked={isSingleOpen} onchange={handleToggle}  onclick={stopPropagation}>   
+            <lightning-input type ="toggle" label ="Allow only one FAQ open at a time" checked={isSingleOpen} onchange={handleToggle}>   
             </lightning-input>
             </div>
-            <!-- FAQ List -->
         
-           <template for:each={faqs} for:item="faq">
-                <div key={faq.id} class="faq-box" data-id={faq.id} onclick={handleClick}>
+          <template for:each={faqs} for:item="faq">
+                <div key={faq.id} class="faq-box">
 
-               
-                    <div class="faq-header"><span>{faq.question}</span>
-                    <span class="icon">
-                            <lightning-icon icon-name={faq.iconName}  size="small"></lightning-icon>
-                        </span>
-                    </div>
+              <div class="faq-header"><span>{faq.question}</span>
+            <span class="icon" data-id={faq.id} onclick={handleClick}>
+                <lightning-icon icon-name={faq.iconName}  size="small"></lightning-icon>
+            </span>
 
-              
-                    <template if:true={faq.open}>
-                         <div class="faq-body">{faq.answer}</div>
-                    </template>
+        </div>
 
-                </div>
-            </template>
+        <template if:true={faq.open}>
+            <div class="faq-body">{faq.answer}</div>
+        </template>
+
+    </div>
+</template>
             
     </lightning-card>
 </template>
