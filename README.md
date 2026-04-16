@@ -676,6 +676,128 @@ Market cap comparison of top 5 cryptocurrencies.
 
 --- 
 
+# 6 Contact Management System (LWC + GraphQL)
+
+A modern **Contact Management System** built using **Lightning Web Components (LWC)** and **Salesforce GraphQL API** (No Apex).
+
+---
+
+## 🚀 Features
+
+* 🔍 Fetch contacts using **GraphQL API**
+* 🧾 Display contacts in **card format UI**
+* 🔗 Clickable:
+
+  * Contact Name → Navigates to Contact Record
+  * Account Name → Navigates to Account Record
+* ➕ Add Contact using **Lightning Record Form in Modal**
+* 🔄 Auto refresh using `refreshGraphQL`
+* 🔎 Search contacts dynamically
+* 📊 Displays:
+
+  * Total contacts
+  * Filtered contacts count (Showing X of Y)
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚡ Lightning Web Components (LWC)
+* 🔗 Salesforce GraphQL API
+* 🎨 SLDS (Salesforce Lightning Design System)
+* 🚫 No Apex used
+
+---
+
+## 📸 Screenshots
+
+### 🔹 1. Initial State
+
+<img src ="6-1.jpg" width="700">
+
+---
+
+### 🔹 2. Hover State
+
+<img src ="6-2.jpg" width="700">
+
+---
+
+### 🔹 3. Add Contact Modal
+
+<img src ="6-3.jpg" width="700">
+---
+
+### 🔹 4. Filtering State
+
+<img src ="6-4.jpg" width="700">
+
+---
+
+## 📂 Project Structure
+lwc/
+ └── contactManagementSystem/
+     ├── contactManagementSystem.html
+     ├── contactManagementSystem.js
+     ├── contactManagementSystem.css
+     └── contactManagementSystem.js-meta.xml
+
+---
+
+## 🔄 Data Flow
+
+GraphQL API
+     ↓
+Wire Adapter (graphql)
+     ↓
+LWC Component
+     ↓
+UI Rendering (Cards)
+
+
+## 🔍 Search Functionality
+
+* Uses debounce (400ms)
+* Filters contacts dynamically
+* Updates UI instantly
+
+---
+
+## ➕ Add Contact Flow
+
+Click Add Contact
+        ↓
+Open Modal
+        ↓
+Fill Form
+        ↓
+Save Record
+        ↓
+refreshGraphQL()
+        ↓
+Updated UI
+
+---
+
+## 🎯 Key Concepts Used
+
+* `@wire(graphql)` → Fetch data
+* `refreshGraphQL()` → Refresh UI
+* `NavigationMixin` → Navigate to records
+* `lightning-record-edit-form` → Create records
+* SLDS Grid → Responsive layout
+
+---
+
+
+## 🎯 Summary
+
+This project demonstrates how to build a **real-time, interactive UI** in Salesforce using:
+
+* GraphQL (no Apex)
+* Modern UI design
+* Efficient data handling
+
 
 # Author
 
