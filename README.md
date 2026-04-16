@@ -713,43 +713,39 @@ A modern **Contact Management System** built using **Lightning Web Components (L
 
 ### 🔹 1. Initial State
 
-<img src ="">
+<img src ="6-1.jpg" width="700">
 
 ---
 
 ### 🔹 2. Hover State
 
-<img src ="">
+<img src ="6-2.jpg" width="700">
 
 ---
 
 ### 🔹 3. Add Contact Modal
 
-<img src ="">
+<img src ="6-3.jpg" width="700">
 ---
 
 ### 🔹 4. Filtering State
 
-<img src ="">
+<img src ="6-4.jpg" width="700">
 
 ---
 
 ## 📂 Project Structure
-
-```text
 lwc/
  └── contactManagementSystem/
      ├── contactManagementSystem.html
      ├── contactManagementSystem.js
      ├── contactManagementSystem.css
      └── contactManagementSystem.js-meta.xml
-```
 
 ---
 
 ## 🔄 Data Flow
 
-```text
 GraphQL API
      ↓
 Wire Adapter (graphql)
@@ -757,9 +753,7 @@ Wire Adapter (graphql)
 LWC Component
      ↓
 UI Rendering (Cards)
-```
 
----
 
 ## 🔍 Search Functionality
 
@@ -771,7 +765,6 @@ UI Rendering (Cards)
 
 ## ➕ Add Contact Flow
 
-```text
 Click Add Contact
         ↓
 Open Modal
@@ -783,7 +776,6 @@ Save Record
 refreshGraphQL()
         ↓
 Updated UI
-```
 
 ---
 
@@ -797,14 +789,6 @@ Updated UI
 
 ---
 
-## ⚡ How to Run
-
-1. Deploy LWC to Salesforce Org
-2. Add component to Lightning Page
-3. Ensure GraphQL API is enabled
-4. Run and test features
-
----
 
 ## 🎯 Summary
 
