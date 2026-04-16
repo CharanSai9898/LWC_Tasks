@@ -713,25 +713,24 @@ A modern **Contact Management System** built using **Lightning Web Components (L
 
 ### 🔹 1. Initial State
 
-
+<img src ="">
 
 ---
 
 ### 🔹 2. Hover State
 
-
+<img src ="">
 
 ---
 
 ### 🔹 3. Add Contact Modal
 
-
-
+<img src ="">
 ---
 
 ### 🔹 4. Filtering State
 
-
+<img src ="">
 
 ---
 
